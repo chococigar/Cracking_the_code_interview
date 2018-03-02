@@ -1,0 +1,19 @@
+
+Q : Suppose we had an algorithm that took in an array of strings,
+sorted each string, and the sorted the full array.
+What would the runtime be?
+
+A :
+
+given m = length of largest string
+      n = length of the array
+
+to sort one string : m*log(m)
+to sort all of the strings in the array : n*m*log(m)
+
+to sort all of the elements of array : n*log(n) * m
+where m is taken to compare between the two string elements
+
+thus n*m*log(m) + n*m*log(n) = n*m (log(n) + log(m))
+
+thus time complexity is O(n*m (log(n) + log(m)))

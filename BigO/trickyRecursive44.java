@@ -25,9 +25,9 @@ public class trickyRecursive44{
     int res = f(4);
     /*
     f
-    total time : O(n), thinking about depth.
+    total time : O(2^n), as runtime is often O(branches^depth) = O(2^n)
     total space : O(n), because essentially spaces for results of f(n)....1 are needed.
-    function calls : 2^n+1 - 1 = 2^0 + 2^1 + ... + 2^n
+    function calls : 2^(n+1) - 1 = 2^0 + 2^1 + ... + 2^n
     */
 
     int res2 = fibonacci(4);
