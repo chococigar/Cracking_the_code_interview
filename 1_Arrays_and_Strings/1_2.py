@@ -2,6 +2,7 @@
 
 """
 - Time : O(n)
+** look out for : case sensitivity / whitespaces. 
 
 """
 f = open("1_2_input.txt", 'r')
