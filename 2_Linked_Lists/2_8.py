@@ -1,7 +1,6 @@
 """
-Find kth to last element of a singly linked list
+Loop detection : similar to 2_1, removing duplicate.
 """
-
 
 class Node(object):
     def __init__(self, data, next): #initdata?
@@ -14,11 +13,12 @@ class SinglyList(object):
     tail = None
 
     def show(self): #1 argument = self
-        print("Showing all the nodes")
+        print("\nShowing all the nodes")
         current = self.head
         while current != None:
             print current.data, "->",
             current = current.next
+        print("")
 
     def append(self, data):
         node = Node(data, None)
@@ -26,7 +26,7 @@ class SinglyList(object):
             self.head = self.tail = node
         else:
             self.tail.next = node
-        self.tail = node
+            self.tail = node
 
     def remove(self, node_value):
         current = self.head
@@ -37,25 +37,20 @@ class SinglyList(object):
                     self.head = current.next
                 else:
                     previous.next = current.next
+
             previous = current
             current = current.next
 
-
-    #Assuming length is not knowing.
-    def kth_last(self, k):
+    def detect_loop(self):
+        dic = {}
         current = self.head
-        count = 0
-        while current != None:
-            count += 1
+        while current!= None:
+            if current.data in dic:
+                return(current.data)
+            dic[current.data] = "1"
             current = current.next
-        print(count)
-        current = self.head
-        for i in range(count - k +1):
-            current = current.next
-        print("%dth to last node is %d" %(k, current.data))
 
-    #Recursive
-    def kth_last2(self, k):
+
 
 
 s = SinglyList()
@@ -63,12 +58,6 @@ s.append(1)
 s.append(2)
 s.append(3)
 s.append(4)
-s.append(5)
-s.append(2)
 s.append(3)
-s.append(4)
-s.append(5)
 s.show()
-s.remove(3)
-s.show()
-s.kth_last(2)
+print(s.detect_loop())

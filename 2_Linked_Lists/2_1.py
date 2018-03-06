@@ -20,6 +20,7 @@ class SinglyList(object):
         while current != None:
             print current.data, "->",
             current = current.next
+        print("")
 
     def append(self, data):
         node = Node(data, None)
@@ -41,7 +42,8 @@ class SinglyList(object):
             previous = current
             current = current.next
 
-    def is_duplicate(self):
+#average time complexity for python dict is O(1); worst case O(n), similar to hash table. (dict is generic name)
+    def remove_duplicate(self):
         dic = {}
         current = self.head
         while current!= None:
@@ -51,6 +53,20 @@ class SinglyList(object):
             current = current.next
         self.show()
         return(self)
+
+    #no buffer allowed; has O(n^2) time, but O(1) space.
+    def remove_duplicate2(self):
+        current = self.head
+        while current != None:
+            runner = current
+            while runner.next != None:
+                if runner.next.data == current.data:
+                    runner.next = runner.next.next
+                else:
+                    runner = runner.next
+            current = current.next
+        return(self)
+
 
 
 s = SinglyList()
@@ -62,6 +78,5 @@ s.append(3)
 s.append(4)
 s.append(5)
 s.show()
-s.remove(3)
+s.remove_duplicate2()
 s.show()
-s.is_duplicate()
