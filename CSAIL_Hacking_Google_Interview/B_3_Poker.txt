@@ -1,0 +1,3 @@
+
+Q
+(Don't ask all these questions at the same time; ask one after another, since they  build upon each other.) Without writing any actual code, describe as much as  possible how you would design a poker game program.  What classes would you  have?  What relationships would they have with each other?  What would be the  basic flow of the program and how would those classes play a part?  If you then  wanted to add a new type of poker game (such as Texas Hold 'em), how would that  fit into your design?

@@ -1,0 +1,2 @@
+Q :
+Describe a stack data structure that supports "push", "pop", and "find minimum"  operations.  "Find minimum" returns the smallest element in the stack. 

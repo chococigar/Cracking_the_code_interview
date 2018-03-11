@@ -1,0 +1,2 @@
+Q :
+Describe how a hash table works. 

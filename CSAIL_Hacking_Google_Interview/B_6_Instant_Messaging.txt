@@ -1,0 +1,3 @@
+Q :
+Describe a design for an instant messaging program where there are several  servers, clients are connected to each server, and the servers communicate with  each other.  Describe the classes, interfaces, and so on that you would use and how  you would organize them.
+ 

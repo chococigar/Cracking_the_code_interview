@@ -1,0 +1,2 @@
+Q :
+Given an n x n grid with a person and obstacles, how would you find a path for the  person to a particular destination?  The person is permitted to move left, right, up,  and down.

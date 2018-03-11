@@ -1,0 +1,1 @@
+Q : Given an integer x and an unsorted array of integers, describe an algorithm to  determine whether two of the numbers add up to x.  (In this case, say that the  interviewer hates hash tables.) 

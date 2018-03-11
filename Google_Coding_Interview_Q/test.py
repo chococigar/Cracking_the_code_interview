@@ -5,20 +5,16 @@ print('s'.isdigit())
 print('S'.isupper())
 
 
-def test():
-    return(10)
 
-test()
-print(test)
+A = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 
-for _ in range(5):
-    print("hello")
-    print(_)
+print(A[1][4]==None)
 
 
-s = "abcdefgh"
-
-if 's'.islower():
-    yield s[2]
-
-print(s)
+"""
+https://stackoverflow.com/questions/6670828/find-all-consecutive-sub-sequences-of-length-n-in-a-sequence
+x = [0,1,7,3,4,5,10]
+n = 3
+zip(*(x[i:] for i in range(n)))
+[(0, 1, 7), (1, 7, 3), (7, 3, 4), (3, 4, 5), (4, 5, 10)]
+"""

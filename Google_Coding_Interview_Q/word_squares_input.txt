@@ -1,0 +1,6 @@
+[I, T, TI, JI, IT, "Asdfasdfasdfds"]
+
+[THAT, HASH, ASIA, FOOL]
+[AREA, BALL, DEAR, LADY, LEAD, YARD]
+
+[BALL, AREA, LEAD, LADY]

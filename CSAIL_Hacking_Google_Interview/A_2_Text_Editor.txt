@@ -1,0 +1,4 @@
+Q :
+Describe a design for a text editor.
+Describe the classes, interfaces,
+and so on that  you would use and how you would organize them. 
