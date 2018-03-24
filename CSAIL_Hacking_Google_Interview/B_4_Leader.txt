@@ -1,3 +1,18 @@
 
 Q :
 Describe a technique to identify a "leader" among a group of 10 identical servers  that are all connected to every other server.  There are no prior distinguishing  characteristics of any of them and the same program to identify the leader starts  running on all of them at the same time.  After an answer is given, ask how much  network traffic it requires and, if "ties" are possible, ask how you can break ties.
+
+
+REAL ANSWER :
+Good Answer: Have each server wait a random amount of time and then say "I'm it." The "I'm it" announcement is time‐stamped, and the computer that time‐stamped its  announcement first is elected the leader.  This approach requires sending out 9 messages.  If there is a tie, the computers can repeat the procedure.
+Note that other answers are possible, but every correct answer will use randomness  in some way.
+
+REFERENCE:
+"LEADER ELECTION"
+
+In distributed computing, leader election is the process of designating a single process as the organizer of some task distributed among several computers (nodes). Before the task is begun, all network nodes are either unaware which node will serve as the "leader" (or coordinator) of the task, or unable to communicate with the current coordinator. After a leader election algorithm has been run, however, each node throughout the network recognizes a particular, unique node as the task leader.
+
+Randomized (probabilistic) leader election
+A common approach to solve the problem of leader election in anonymous rings is the use of probabilistic algorithms. In such approaches, generally processors assume some identities based on a probabilistic function and communicate it to the rest of the network. At the end, through the application of an algorithm, a leader is selected (with high probability).
+
+Courtesy to Wikipedia

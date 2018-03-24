@@ -1,2 +1,22 @@
 Q :
-Describe a stack data structure that supports "push", "pop", and "find minimum"  operations.  "Find minimum" returns the smallest element in the stack. 
+Describe a stack data structure that supports "push", "pop", and "find minimum"  operations.  "Find minimum" returns the smallest element in the stack.
+
+stack : LIFO (last in, first out; top out first.)
+
+push / pop / find minimum(smallest element in stack)
+
+You only have immediate access to the top stack node.
+
+Similar to linked list.
+
+push : link list append to the very end.
+pop : link list delete from the very end.
+find minimum : save topmost value as "current", progress downwards
+(all the way down) and see if anything is smaller. //"find"minimum.
+
+Push and pop takes O(1) operations, whereas minimum takes O(n).
+
+Or we could make it in such a way that every tine a stack node is
+added or deleted, we could compare it with the "current minimum buffer". Then we'd be able to tell right away.
+--> Oh, if it's only consisted of stacks, then we can save it in a stack.
+Every time an element is added we can pop and push back (if needed) the minima from the minimum stack. Minimum at any given moment would be the pop from the second minimum stack.

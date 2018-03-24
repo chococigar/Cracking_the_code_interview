@@ -1,3 +1,21 @@
 Q :
 Describe a design for an instant messaging program where there are several  servers, clients are connected to each server, and the servers communicate with  each other.  Describe the classes, interfaces, and so on that you would use and how  you would organize them.
- 
+
+A :
+to consider
+- divide packets
+- which route
+- which server to which client
+- how interaction is initiated (handshaking)
+- reliable data transfer
+- timer
+- receiver, sender
+- maintaining states, changing states
+
+**perhaps a markov chain will be relevant.
+
+interfaces : client-side
+
+A :
+I would draw the markov state diagram for RDT 3.0, and
+describe RDT 3.0 in  an ISP. 

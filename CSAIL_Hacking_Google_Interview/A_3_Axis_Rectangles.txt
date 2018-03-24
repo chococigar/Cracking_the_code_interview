@@ -1,2 +1,64 @@
 Q :
-Describe an algorithm that takes an unsorted array of axis‐aligned rectangles and  returns any pair of rectangles that overlaps, if there is such a pair.  Axis‐aligned  means that all the rectangle sides are either parallel or perpendicular to the x‐ and  y‐axis.  You can assume that each rectangle object has two variables in it: the x‐y  coordinates of the upper‐left corner and the bottom‐right corner. 
+Describe an algorithm that takes an unsorted array of axis‐aligned rectangles and  returns any pair of rectangles that overlaps, if there is such a pair.
+
+Axis‐aligned  means that all the rectangle sides are either parallel or perpendicular to the x‐ and  y‐axis.
+You can assume that each rectangle object has two variables in it: the x‐y  coordinates of the upper‐left corner and the bottom‐right corner.
+
+
+A :
+
+Rectangle 1 : (x1, y1), (x2, y2)
+
+BCR : O(n)? Is it? Do I need to look at everything?
+
+***** ANY PAIR of rectangles; not all pairs. Wow. please read carefully.
+
+Unsorted array (size n);
+
+Any overlap exists if any of the following holds true :
+1. x1 or x2 in range [x3, x4]
+2. x3 or x4 in range [x1, x2]
+3. y1 or y2 in range [y3, y4]
+4. y3 or y4 in range [y1, y2]
+
+Therefore,
+
+<DICT is not good.>
+x_dict(x1) = x2 for all;
+y_dict(y1) = y2 for all;
+
+dict : fast, but no order guaranteed.
+Is sorting necessary? DO I even need to look at everything?
+keys necessary?
+
+<ARRAY?>
+sort into array?
+
+<Min tree>
+
+
+
+
+
+
+
+
+
+--------STUPID METHOD----------
+Method : extract tuples;
+Align in increasing order by x1;
+
+Make each x1 into an array x1_array
+Make each x2 into an array x2_array
+for i in range(len(x2)):
+  for j in range(i, len(x2)):
+    if x1[i]>=x2[j]:overlap.
+
+Same for other things. Thus O(n^2).
+
+Comparing each rectnagles is the most stupid idea ever.
+
+Rectangle 1 : (x1, y1), (x2, y2)
+Rectangle 2 : (x3, y3), (x4, y4)
+
+Does any of the following hold true?

@@ -1,2 +1,25 @@
 Q :
-Describe how a hash table works. 
+Describe how a hash table works.
+
+A :
+
+
+So if an index is already filled, we can add it to the next empty spot.
+
+
+Hash : Distribute keys/values across array of buckets.
+Hash function : Any function that is used to map a data set of arbitrary size to a data set of fixed size (under the hash table).
+**
+hash = hashfunc(key)
+index = hash % array_size
+**
+
+Hashing is used when keys are large, and can't directly be used as index.
+Large keys are converted into small numbers using hash functions.
+
+
+Good hashing : 1. easy computation / 2. uniform distribution / 3. less collision
+
+Dict is also part of a hash table where indices are "strings" (in which we're required to read the string index)
+
+Reference : time complexity between arrays and hash tables

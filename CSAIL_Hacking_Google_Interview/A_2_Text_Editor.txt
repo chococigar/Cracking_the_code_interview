@@ -1,4 +1,26 @@
 Q :
 Describe a design for a text editor.
 Describe the classes, interfaces,
-and so on that  you would use and how you would organize them. 
+and so on that  you would use and how you would organize them.
+
+A :
+
+Nec :
+- depending on code being implemented : parse the code to abstract form accordingly.
+- give ability to make classes depending on language used.
+  - In par with making an expendable... but this is editor not a language. So you should have said "plugins importable"
+- indentation; depending on the language;--> dif parts of language.
+- import, function type, recursion, parse from the
+abstract type to ....
+- If possible; show folder branch on the left.
+
+Additional :
+- Colors for dif functions, etc.
+
+
+Sample A (What was missing) :
+- Handling input
+- Saving/loading files
+- Using inheritance (subclassing); good for reusability / extendability;
+  - Model-view Controller, Listener / Observer, Singleton pattern could be good.
+- ability to greatly modify the behavior of their editor  and want to be able to write extensions that add functionality to it.
