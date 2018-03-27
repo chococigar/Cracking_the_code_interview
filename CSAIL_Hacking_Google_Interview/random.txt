@@ -1,0 +1,28 @@
+Q : Generate a method for pseudo-random.
+
+
+
+A :
+Initial thought is to utilize pi, extracting digits as is
+allowed by the range of the numbers.
+
+Maybe :
+
+ex) between 0~100:
+
+pi's
+
+3.14/1592/65/35/897/932384626433832795028841971693993751058209749445923
+
+If not Mersenne Twister,
+
+
+Sol 1)
+Need a seed. ex)
+
+(middle, if needed, skewed to left).
+random(0~99) = 14^2 = 196 --> 19
+random(0~9999) = 1592^2 = 2534464 --> 5344
+random(0~99) = 65^2 = 4225 --> 22
+random(0~99) = 35^2 = 1225 --> 22
+random(0~999) = 897^2 = 804609 --> 046 = 46

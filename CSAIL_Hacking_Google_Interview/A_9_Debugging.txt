@@ -1,1 +1,11 @@
-Q : Describe a good strategy to find a bug in a program. 
+Q : Describe a good strategy to find a bug in a program.
+
+
+Debugging is just like searching for an element within a tree.
+Analyze the program into segments by functions/goals.
+print values, etc.
+See if it can be scoped to one segment.
+Once you are in a smaller scope, more fine-testing can work
+(try different routes, etc)
+
+Key is to limit the scope of search. 

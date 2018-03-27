@@ -1,1 +1,15 @@
-Q : Describe an algorithm to output a die roll (a random number from 1 to 6), given a  function that outputs a coin toss (a random number from 1 to 2).  Each possible  outcome should be equally likely. 
+Q : Describe an algorithm to output a die roll (a random number from 1 to 6), given a  function that outputs a coin toss (a random number from 1 to 2).  Each possible  outcome should be equally likely.
+
+A :
+1 : 1, 2
+2 : 2, 3, 4
+3 : 3, 4, 5, 6
+4 : 4, 5, 6, 7, 8
+5 : 5, 6, 7, 8, 9, 10
+
+Addition.
+
+f(die_roll) = (sum of 5 f(coin_toss)) - 4.
+
+ANOTHER A:
+flip coin 3 times, bitwise. Otherwise, repeat. 
