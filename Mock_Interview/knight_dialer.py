@@ -4,7 +4,6 @@ def count_num(len_num, start_num):
 	if len_num <= 1:
 		return len_num
 
-	cnt = 0
 	cur_branches = [0 for x in range(10)]
 	prev_branches = [0 for x in range(10)]
 
@@ -15,9 +14,6 @@ def count_num(len_num, start_num):
 		for ind in range(0, 10):
 			for neighbor in pos_dic[ind]: # rather than length of things.
 				cur_branches[ind] += prev_branches[neighbor]
-
-		print("ind %d : ", ind),
-		print(cur_branches)
 
 		if i == len_num-1:
 			break
